@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Effetto Farfalla:  File sorgente /home/dani/Downloads/Effetto Farfalla/src/header/secure.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Effetto Farfalla
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generato da Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Cerca');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Cerca');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_8408bad1c8b66572738be7dc5ba73ab6.html">header</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">secure.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="secure_8h.html">Vai alla documentazione di questo file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef SECURE_H</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define SECURE_H</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="data__struct_8h.html">data_struct.h</a>&quot;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#ifdef DEBUG_MODE</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#define MASK  1  </span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define DBG(A, B) {if ((A) &amp; MASK) {B; } }      </span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#else</span></div><div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="secure_8h.html#a9fd176efd6d22cb809550f0271c2a93d">   12</a></span>&#160;<span class="preprocessor">#define DBG(A, B)                               </span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#endif</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">/* Dichiarazioni non necessarie inserite per comodita&#39; */</span></div><div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="secure_8h.html#aa53f0a25bc313d973491b6e5e428b572">   16</a></span>&#160;<span class="preprocessor">#define DEFCON1(a) DBG(1, a)                </span></div><div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="secure_8h.html#a780f4620829d5895a9aad777268a8a8d">   17</a></span>&#160;<span class="preprocessor">#define DEFCON2(a) DBG(2, a)                </span></div><div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="secure_8h.html#ac7a9f4e3875f14dffa1df11ec8846ec2">   18</a></span>&#160;<span class="preprocessor">#define DEFCON4(a) DBG(4, a)                </span></div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">void secure_player(GList *c, const char name_f[]);</span></div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keywordtype">void</span> <a class="code" href="secure_8h.html#abdd6bf0bbe8ca673ebd5aae56117524f">secure_object</a>(<a class="code" href="structObject.html">Object</a> c, <span class="keyword">const</span> <span class="keywordtype">char</span> name_f[]);</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keywordtype">void</span> <a class="code" href="secure_8h.html#a1c9461ecca9ba45fe1d3a8808d935c61">secure_sample</a>(ALLEGRO_SAMPLE *c[], <span class="keyword">const</span> <span class="keywordtype">char</span> name_f[]);</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keywordtype">void</span> <a class="code" href="secure_8h.html#a3bfd8283e2b78efc1d3b562a08050d33">secure_image</a>(ALLEGRO_BITMAP *pic, <span class="keyword">const</span> <span class="keywordtype">char</span> name_f[]);</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keywordtype">void</span> <a class="code" href="secure_8h.html#a45bd64593abe3d5b4fbbd5ae5a6e541b">secure_font</a>(ALLEGRO_FONT *f, <span class="keyword">const</span> <span class="keywordtype">char</span> name_f[]);</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* SECURE_H */</span><span class="preprocessor"></span></div><div class="ttc" id="secure_8h_html_abdd6bf0bbe8ca673ebd5aae56117524f"><div class="ttname"><a href="secure_8h.html#abdd6bf0bbe8ca673ebd5aae56117524f">secure_object</a></div><div class="ttdeci">void secure_object(Object c, const char name_f[])</div><div class="ttdoc">Funzione di sicurezza. </div></div>
+<div class="ttc" id="structObject_html"><div class="ttname"><a href="structObject.html">Object</a></div><div class="ttdoc">Struttura dati relativa agli oggetti collezionabili durante la partita. </div><div class="ttdef"><b>Definition:</b> data_struct.h:91</div></div>
+<div class="ttc" id="secure_8h_html_a1c9461ecca9ba45fe1d3a8808d935c61"><div class="ttname"><a href="secure_8h.html#a1c9461ecca9ba45fe1d3a8808d935c61">secure_sample</a></div><div class="ttdeci">void secure_sample(ALLEGRO_SAMPLE *c[], const char name_f[])</div><div class="ttdoc">Funzione di sicurezza. </div></div>
+<div class="ttc" id="secure_8h_html_a45bd64593abe3d5b4fbbd5ae5a6e541b"><div class="ttname"><a href="secure_8h.html#a45bd64593abe3d5b4fbbd5ae5a6e541b">secure_font</a></div><div class="ttdeci">void secure_font(ALLEGRO_FONT *f, const char name_f[])</div><div class="ttdoc">Funzione di sicurezza. </div></div>
+<div class="ttc" id="secure_8h_html_a3bfd8283e2b78efc1d3b562a08050d33"><div class="ttname"><a href="secure_8h.html#a3bfd8283e2b78efc1d3b562a08050d33">secure_image</a></div><div class="ttdeci">void secure_image(ALLEGRO_BITMAP *pic, const char name_f[])</div><div class="ttdoc">Funzione di sicurezza. </div></div>
+<div class="ttc" id="data__struct_8h_html"><div class="ttname"><a href="data__struct_8h.html">data_struct.h</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generato da &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

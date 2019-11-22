@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Effetto Farfalla:  File sorgente /home/dani/Downloads/Effetto Farfalla/src/header/game_functions.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Effetto Farfalla
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generato da Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Cerca');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Cerca');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_8408bad1c8b66572738be7dc5ba73ab6.html">header</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">game_functions.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="game__functions_8h.html">Vai alla documentazione di questo file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef GAME_FUNCTIONS_H</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define GAME_FUNCTIONS_H</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="data__struct_8h.html">data_struct.h</a>&quot;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="inits_8h.html">inits.h</a>&quot;</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="secure_8h.html">secure.h</a>&quot;</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div><div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="game__functions_8h.html#a315ba261cd83ffee4a2690e9464f2eaa">    8</a></span>&#160;<span class="preprocessor">#define START_MOV_CAMERA 382. </span></div><div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="game__functions_8h.html#a7d2766cd828dc645d41abaf9cd482724">    9</a></span>&#160;<span class="preprocessor">#define END_MOV_CAMERA 3583.  </span></div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">float strenght_calc(GList *p);</span></div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keywordtype">float</span> <a class="code" href="game__functions_8h.html#ac7b6a798488c7d315bddbd2291b00daf">armor_calc</a>(GList *p);</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keywordtype">void</span> <a class="code" href="game__functions_8h.html#a509a319bed4f8c370d24a46086386cd3">health_bullet</a>(GList *&amp;p, GList *e);</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;GList* <a class="code" href="game__functions_8h.html#a864a552a03c2e6ac64058fe794c91621">search_obj</a>(GList *p, <a class="code" href="data__struct_8h.html#ac3e2a1a01bb7eb2b433bd0867597f5b9">Type_Obj</a> type);</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keywordtype">void</span> <a class="code" href="game__functions_8h.html#a2836bba585d2184d4dee1d68e776166c">dir_bullet</a>(GList *&amp;p);</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keywordtype">void</span> <a class="code" href="game__functions_8h.html#ae38414c955f822694b7eb5e102d8414d">general_update_bullet</a>(GList *&amp;p, GList *&amp;e, GList *&amp;m);</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keywordtype">void</span> <a class="code" href="game__functions_8h.html#a922a60cf003cc476b62652673a4a25d7">general_collision</a>(GList *&amp;p, GList *&amp;e, GList *&amp;m, <a class="code" href="structExplosion.html">Explosion</a> &amp;b_exp, <a class="code" href="structExplosion.html">Explosion</a> &amp;p_exp, <a class="code" href="structObject.html">Object</a> obj[], ALLEGRO_SAMPLE * sound_effect[]);</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="keywordtype">void</span> <a class="code" href="game__functions_8h.html#af16d756a80064099a67b72ef0499e680">casual_movement_enemy</a>(GList *&amp;e, GList *p);</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="keywordtype">void</span> <a class="code" href="game__functions_8h.html#a86409e76838347cefb656956f0deb106">general_random_spawn</a>(<a class="code" href="structObject.html">Object</a> obj[], <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> lvl);</div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="keywordtype">void</span> <a class="code" href="game__functions_8h.html#ae429415406e20cda73816fb645ed6ae1">casual_movement_minion</a>(GList *&amp;m);</div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="keywordtype">void</span> <a class="code" href="game__functions_8h.html#ac48eee5b4350a3b06f7d499cb38c8dcd">casual_movement_gravity</a>(GList *&amp;m, <span class="keywordtype">bool</span> &amp;jump);</div><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* GAME_FUNCTIONS_H */</span><span class="preprocessor"></span></div><div class="ttc" id="game__functions_8h_html_a922a60cf003cc476b62652673a4a25d7"><div class="ttname"><a href="game__functions_8h.html#a922a60cf003cc476b62652673a4a25d7">general_collision</a></div><div class="ttdeci">void general_collision(GList *&amp;p, GList *&amp;e, GList *&amp;m, Explosion &amp;b_exp, Explosion &amp;p_exp, Object obj[], ALLEGRO_SAMPLE *sound_effect[])</div><div class="ttdoc">Funzione generale che chiama le varie collisioni al fine di controllare se vi e&amp;#39; collisione o meno tr...</div></div>
+<div class="ttc" id="inits_8h_html"><div class="ttname"><a href="inits_8h.html">inits.h</a></div></div>
+<div class="ttc" id="game__functions_8h_html_ac7b6a798488c7d315bddbd2291b00daf"><div class="ttname"><a href="game__functions_8h.html#ac7b6a798488c7d315bddbd2291b00daf">armor_calc</a></div><div class="ttdeci">float armor_calc(GList *p)</div><div class="ttdoc">La funzione calcola il valore della difesa del personaggio. </div></div>
+<div class="ttc" id="game__functions_8h_html_ae429415406e20cda73816fb645ed6ae1"><div class="ttname"><a href="game__functions_8h.html#ae429415406e20cda73816fb645ed6ae1">casual_movement_minion</a></div><div class="ttdeci">void casual_movement_minion(GList *&amp;m)</div><div class="ttdoc">Funzione che gestisce il movimento casuale, e lo sparo, dei minion del primo livello. </div></div>
+<div class="ttc" id="game__functions_8h_html_ae38414c955f822694b7eb5e102d8414d"><div class="ttname"><a href="game__functions_8h.html#ae38414c955f822694b7eb5e102d8414d">general_update_bullet</a></div><div class="ttdeci">void general_update_bullet(GList *&amp;p, GList *&amp;e, GList *&amp;m)</div><div class="ttdoc">Funzione generale che chiama le varie update bullet, al fine di aggiornare tutti i proiettili present...</div></div>
+<div class="ttc" id="game__functions_8h_html_a509a319bed4f8c370d24a46086386cd3"><div class="ttname"><a href="game__functions_8h.html#a509a319bed4f8c370d24a46086386cd3">health_bullet</a></div><div class="ttdeci">void health_bullet(GList *&amp;p, GList *e)</div><div class="ttdoc">La funzione modifica il valore della salute del personaggio colpito. </div></div>
+<div class="ttc" id="game__functions_8h_html_af16d756a80064099a67b72ef0499e680"><div class="ttname"><a href="game__functions_8h.html#af16d756a80064099a67b72ef0499e680">casual_movement_enemy</a></div><div class="ttdeci">void casual_movement_enemy(GList *&amp;e, GList *p)</div><div class="ttdoc">La funzione gestisce il movimento, e lo sparo, del nemico finale del primo livello. </div></div>
+<div class="ttc" id="structObject_html"><div class="ttname"><a href="structObject.html">Object</a></div><div class="ttdoc">Struttura dati relativa agli oggetti collezionabili durante la partita. </div><div class="ttdef"><b>Definition:</b> data_struct.h:91</div></div>
+<div class="ttc" id="structExplosion_html"><div class="ttname"><a href="structExplosion.html">Explosion</a></div><div class="ttdoc">Struttura dati relativa alle esplosioni. </div><div class="ttdef"><b>Definition:</b> data_struct.h:65</div></div>
+<div class="ttc" id="game__functions_8h_html_a2836bba585d2184d4dee1d68e776166c"><div class="ttname"><a href="game__functions_8h.html#a2836bba585d2184d4dee1d68e776166c">dir_bullet</a></div><div class="ttdeci">void dir_bullet(GList *&amp;p)</div><div class="ttdoc">La funzione stabilisce l&amp;#39;orientamento e le coordinate iniziali del proiettile del personaggio...</div></div>
+<div class="ttc" id="game__functions_8h_html_ac48eee5b4350a3b06f7d499cb38c8dcd"><div class="ttname"><a href="game__functions_8h.html#ac48eee5b4350a3b06f7d499cb38c8dcd">casual_movement_gravity</a></div><div class="ttdeci">void casual_movement_gravity(GList *&amp;m, bool &amp;jump)</div><div class="ttdoc">Funzione che gestisce il movimento casuale, e lo sparo, dei minion del secondo livello. </div></div>
+<div class="ttc" id="game__functions_8h_html_a864a552a03c2e6ac64058fe794c91621"><div class="ttname"><a href="game__functions_8h.html#a864a552a03c2e6ac64058fe794c91621">search_obj</a></div><div class="ttdeci">GList * search_obj(GList *p, Type_Obj type)</div><div class="ttdoc">La funzione restituisce al puntatore all&amp;#39;oggetto. </div></div>
+<div class="ttc" id="data__struct_8h_html_ac3e2a1a01bb7eb2b433bd0867597f5b9"><div class="ttname"><a href="data__struct_8h.html#ac3e2a1a01bb7eb2b433bd0867597f5b9">Type_Obj</a></div><div class="ttdeci">Type_Obj</div><div class="ttdef"><b>Definition:</b> data_struct.h:62</div></div>
+<div class="ttc" id="game__functions_8h_html_a86409e76838347cefb656956f0deb106"><div class="ttname"><a href="game__functions_8h.html#a86409e76838347cefb656956f0deb106">general_random_spawn</a></div><div class="ttdeci">void general_random_spawn(Object obj[], unsigned int lvl)</div><div class="ttdoc">Funzione generale che chiama le random_spawn al fine di gestire lo spawn randomico degli oggetti nei ...</div></div>
+<div class="ttc" id="data__struct_8h_html"><div class="ttname"><a href="data__struct_8h.html">data_struct.h</a></div></div>
+<div class="ttc" id="secure_8h_html"><div class="ttname"><a href="secure_8h.html">secure.h</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generato da &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

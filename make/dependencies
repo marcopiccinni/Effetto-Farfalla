@@ -1,0 +1,21 @@
+IOfile.o: ../src/code/IOfile.cc ../src/code/../header/IOfile.h \
+ ../src/code/../header/data_struct.h ../src/code/../header/secure.h
+game_functions.o: ../src/code/game_functions.cc \
+ ../src/code/../header/game_functions.h \
+ ../src/code/../header/data_struct.h ../src/code/../header/inits.h \
+ ../src/code/../header/secure.h ../src/code/../header/game_functions.h
+inits.o: ../src/code/inits.cc ../src/code/../header/inits.h \
+ ../src/code/../header/data_struct.h ../src/code/../header/secure.h \
+ ../src/code/../header/game_functions.h ../src/code/../header/inits.h
+interface.o: ../src/code/interface.cc ../src/code/../header/interface.h \
+ ../src/code/../header/data_struct.h ../src/code/../header/secure.h \
+ ../src/code/../header/inits.h ../src/code/../header/game_functions.h \
+ ../src/code/../header/IOfile.h
+main.o: ../src/code/main.cc ../src/code/../header/secure.h \
+ ../src/code/../header/data_struct.h ../src/code/../header/inits.h \
+ ../src/code/../header/secure.h ../src/code/../header/game_functions.h \
+ ../src/code/../header/inits.h ../src/code/../header/interface.h \
+ ../src/code/../header/IOfile.h ../src/code/../header/game_functions.h \
+ ../src/code/../header/data_struct.h
+secure.o: ../src/code/secure.cc ../src/code/../header/secure.h \
+ ../src/code/../header/data_struct.h

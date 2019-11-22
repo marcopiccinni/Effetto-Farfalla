@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Effetto Farfalla:  File sorgente /home/dani/Downloads/Effetto Farfalla/src/header/interface.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Effetto Farfalla
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generato da Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Cerca');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Cerca');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_8408bad1c8b66572738be7dc5ba73ab6.html">header</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">interface.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="interface_8h.html">Vai alla documentazione di questo file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef INTERFACCIA_H</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define INTERFACCIA_H</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="data__struct_8h.html">data_struct.h</a>&quot;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="secure_8h.html">secure.h</a>&quot;</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="inits_8h.html">inits.h</a>&quot;</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="game__functions_8h.html">game_functions.h</a>&quot;</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="IOfile_8h.html">IOfile.h</a>&quot;</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keywordtype">void</span> <a class="code" href="interface_8h.html#ae769413969de05bfdba6b4c3682bc06c">player_movement</a>(ALLEGRO_KEYBOARD_STATE &amp;key_state, GList *&amp;p, <span class="keywordtype">bool</span> &amp;active);</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keywordtype">void</span> <a class="code" href="interface_8h.html#a0252ce4cc4641ceda14b84b4e862e1a9">player_movement_gravity</a>(ALLEGRO_KEYBOARD_STATE &amp;key_state, GList *&amp;p, <span class="keywordtype">bool</span> &amp;active, <span class="keywordtype">bool</span> &amp;jump);</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keywordtype">void</span> <a class="code" href="interface_8h.html#af0648fc8e10b017ac7fca27393c9f7c8">menu_pre_game</a>(ALLEGRO_FONT *font_1, ALLEGRO_EVENT_QUEUE *event_queue, GList *&amp;p,</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    ALLEGRO_DISPLAY *display, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> &amp;level);</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keywordtype">void</span> <a class="code" href="interface_8h.html#a8fc321a40a04263fb632f86d9728e18b">make_your_choice</a>(GList *p, <a class="code" href="structBackground.html">Background</a> background, ALLEGRO_FONT *font_1, ALLEGRO_DISPLAY *display, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> &amp;level, <span class="keywordtype">bool</span> &amp;done);</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keywordtype">void</span> <a class="code" href="interface_8h.html#a3c0f0ef568bead49fc39e7d6820255df">end_level</a>(GList *&amp;p, GList *&amp;e, <a class="code" href="structFader.html">Fader</a> &amp;fade, <a class="code" href="structBackground.html">Background</a> &amp;background, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> &amp;lvl);</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="keywordtype">void</span> <a class="code" href="interface_8h.html#ad9b9cf163a49a04216c09e0c1065fd1d">death_fade</a>(<a class="code" href="structFader.html">Fader</a> &amp;fade, <a class="code" href="structBackground.html">Background</a> &amp;background, GList *&amp;p, GList *&amp;e, <span class="keywordtype">bool</span> &amp;done);</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="keywordtype">void</span> <a class="code" href="interface_8h.html#a60d3f6a330236c037fbae15e09b87706">player_fire</a>(GList *&amp;p, ALLEGRO_KEYBOARD_STATE &amp;key_state);</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="keywordtype">void</span> <a class="code" href="interface_8h.html#a71bfe116b100b302f90c04b67f09ea73">change_frame</a>(GList *&amp;p, GList *&amp;e, GList *&amp;m, <a class="code" href="structExplosion.html">Explosion</a> &amp;b_exp, <a class="code" href="structExplosion.html">Explosion</a> &amp;p_exp, <span class="keywordtype">bool</span> active);</div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="keywordtype">void</span> <a class="code" href="interface_8h.html#ae31b6df81028d239c1ac796de8105b5e">spawn_minions</a>(GList *&amp;m, GList *&amp;e, GList *&amp;p, <span class="keywordtype">bool</span> &amp;run, <a class="code" href="structFader.html">Fader</a> &amp;fade, <a class="code" href="structBackground.html">Background</a> &amp;background, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> &amp;lvl, <span class="keywordtype">bool</span> &amp;done);</div><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="keywordtype">void</span> <a class="code" href="interface_8h.html#ae722e55c01e81356be33a406f8d3ff50">draw</a>(<a class="code" href="structBackground.html">Background</a> background, GList *p, GList *e, GList *m, <a class="code" href="structExplosion.html">Explosion</a> b_exp, <a class="code" href="structExplosion.html">Explosion</a> p_exp, <a class="code" href="structFader.html">Fader</a> &amp;fade,</div><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    ALLEGRO_FONT *font_1, <a class="code" href="structObject.html">Object</a> obj[]);</div><div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div><div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="keywordtype">void</span> <a class="code" href="interface_8h.html#a113b67a60bf6f8aaa05f9e1bb96baec5">mod_camera</a>(ALLEGRO_TRANSFORM &amp;camera, <span class="keywordtype">float</span> *camera_position, GList *&amp;p);</div><div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;</div><div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* INTERFACCIA_H */</span><span class="preprocessor"></span></div><div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div><div class="ttc" id="interface_8h_html_a3c0f0ef568bead49fc39e7d6820255df"><div class="ttname"><a href="interface_8h.html#a3c0f0ef568bead49fc39e7d6820255df">end_level</a></div><div class="ttdeci">void end_level(GList *&amp;p, GList *&amp;e, Fader &amp;fade, Background &amp;background, unsigned int &amp;lvl)</div><div class="ttdoc">La funzione gestisce fade e cambio di backgroud a fine livello. </div></div>
+<div class="ttc" id="IOfile_8h_html"><div class="ttname"><a href="IOfile_8h.html">IOfile.h</a></div></div>
+<div class="ttc" id="interface_8h_html_a113b67a60bf6f8aaa05f9e1bb96baec5"><div class="ttname"><a href="interface_8h.html#a113b67a60bf6f8aaa05f9e1bb96baec5">mod_camera</a></div><div class="ttdeci">void mod_camera(ALLEGRO_TRANSFORM &amp;camera, float *camera_position, GList *&amp;p)</div><div class="ttdoc">La funzione gestisce la modifica della camera. </div></div>
+<div class="ttc" id="structFader_html"><div class="ttname"><a href="structFader.html">Fader</a></div><div class="ttdoc">Struttura dati relativa alle dissolvenze. </div><div class="ttdef"><b>Definition:</b> data_struct.h:146</div></div>
+<div class="ttc" id="interface_8h_html_ad9b9cf163a49a04216c09e0c1065fd1d"><div class="ttname"><a href="interface_8h.html#ad9b9cf163a49a04216c09e0c1065fd1d">death_fade</a></div><div class="ttdeci">void death_fade(Fader &amp;fade, Background &amp;background, GList *&amp;p, GList *&amp;e, bool &amp;done)</div><div class="ttdoc">La funzione gestisce gli eventi causati dalla morte del giocatore. </div></div>
+<div class="ttc" id="interface_8h_html_a8fc321a40a04263fb632f86d9728e18b"><div class="ttname"><a href="interface_8h.html#a8fc321a40a04263fb632f86d9728e18b">make_your_choice</a></div><div class="ttdeci">void make_your_choice(GList *p, Background background, ALLEGRO_FONT *font_1, ALLEGRO_DISPLAY *display, unsigned int &amp;level, bool &amp;done)</div><div class="ttdoc">La funzione carica il menu&amp;#39; di fine livello. </div></div>
+<div class="ttc" id="inits_8h_html"><div class="ttname"><a href="inits_8h.html">inits.h</a></div></div>
+<div class="ttc" id="interface_8h_html_af0648fc8e10b017ac7fca27393c9f7c8"><div class="ttname"><a href="interface_8h.html#af0648fc8e10b017ac7fca27393c9f7c8">menu_pre_game</a></div><div class="ttdeci">void menu_pre_game(ALLEGRO_FONT *font_1, ALLEGRO_EVENT_QUEUE *event_queue, GList *&amp;p, ALLEGRO_DISPLAY *display, unsigned int &amp;level)</div><div class="ttdoc">La funzione carica il menu&amp;#39; iniziale di gioco. </div></div>
+<div class="ttc" id="structObject_html"><div class="ttname"><a href="structObject.html">Object</a></div><div class="ttdoc">Struttura dati relativa agli oggetti collezionabili durante la partita. </div><div class="ttdef"><b>Definition:</b> data_struct.h:91</div></div>
+<div class="ttc" id="structExplosion_html"><div class="ttname"><a href="structExplosion.html">Explosion</a></div><div class="ttdoc">Struttura dati relativa alle esplosioni. </div><div class="ttdef"><b>Definition:</b> data_struct.h:65</div></div>
+<div class="ttc" id="game__functions_8h_html"><div class="ttname"><a href="game__functions_8h.html">game_functions.h</a></div></div>
+<div class="ttc" id="interface_8h_html_a0252ce4cc4641ceda14b84b4e862e1a9"><div class="ttname"><a href="interface_8h.html#a0252ce4cc4641ceda14b84b4e862e1a9">player_movement_gravity</a></div><div class="ttdeci">void player_movement_gravity(ALLEGRO_KEYBOARD_STATE &amp;key_state, GList *&amp;p, bool &amp;active, bool &amp;jump)</div><div class="ttdoc">La funzione permette il movimento del personaggio gestito dal giocatore. </div></div>
+<div class="ttc" id="interface_8h_html_a71bfe116b100b302f90c04b67f09ea73"><div class="ttname"><a href="interface_8h.html#a71bfe116b100b302f90c04b67f09ea73">change_frame</a></div><div class="ttdeci">void change_frame(GList *&amp;p, GList *&amp;e, GList *&amp;m, Explosion &amp;b_exp, Explosion &amp;p_exp, bool active)</div><div class="ttdoc">La funzione gestisce l&amp;#39;aggiornamento dei frame. </div></div>
+<div class="ttc" id="structBackground_html"><div class="ttname"><a href="structBackground.html">Background</a></div><div class="ttdoc">Struttura dati relativa allo sfondo. </div><div class="ttdef"><b>Definition:</b> data_struct.h:79</div></div>
+<div class="ttc" id="interface_8h_html_a60d3f6a330236c037fbae15e09b87706"><div class="ttname"><a href="interface_8h.html#a60d3f6a330236c037fbae15e09b87706">player_fire</a></div><div class="ttdeci">void player_fire(GList *&amp;p, ALLEGRO_KEYBOARD_STATE &amp;key_state)</div><div class="ttdoc">La funzione gestisce lo sparo del giocatore. </div></div>
+<div class="ttc" id="interface_8h_html_ae769413969de05bfdba6b4c3682bc06c"><div class="ttname"><a href="interface_8h.html#ae769413969de05bfdba6b4c3682bc06c">player_movement</a></div><div class="ttdeci">void player_movement(ALLEGRO_KEYBOARD_STATE &amp;key_state, GList *&amp;p, bool &amp;active)</div><div class="ttdoc">La funzione permette il movimento del personaggio gestito dal giocatore. </div></div>
+<div class="ttc" id="data__struct_8h_html"><div class="ttname"><a href="data__struct_8h.html">data_struct.h</a></div></div>
+<div class="ttc" id="interface_8h_html_ae31b6df81028d239c1ac796de8105b5e"><div class="ttname"><a href="interface_8h.html#ae31b6df81028d239c1ac796de8105b5e">spawn_minions</a></div><div class="ttdeci">void spawn_minions(GList *&amp;m, GList *&amp;e, GList *&amp;p, bool &amp;run, Fader &amp;fade, Background &amp;background, unsigned int &amp;lvl, bool &amp;done)</div><div class="ttdoc">La funzione gestisce lo spawn dei minion e del nemico a fine livello. </div></div>
+<div class="ttc" id="secure_8h_html"><div class="ttname"><a href="secure_8h.html">secure.h</a></div></div>
+<div class="ttc" id="interface_8h_html_ae722e55c01e81356be33a406f8d3ff50"><div class="ttname"><a href="interface_8h.html#ae722e55c01e81356be33a406f8d3ff50">draw</a></div><div class="ttdeci">void draw(Background background, GList *p, GList *e, GList *m, Explosion b_exp, Explosion p_exp, Fader &amp;fade, ALLEGRO_FONT *font_1, Object obj[])</div><div class="ttdoc">La funzione disegna sul display tutte i componenti grafici necessari per il gioco. </div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generato da &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>
